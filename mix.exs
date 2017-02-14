@@ -15,7 +15,7 @@ defmodule Webclient.Mixfile do
   # Type "mix help compile.app" for more information
   def application do
     # Specify extra applications you'll use from Erlang/Elixir
-    [extra_applications: [:logger, :httpoison, :floki, :hound, :cowboy, :plug ],
+    [extra_applications: [:logger, :httpoison, :floki, :hound, :cowboy, :plug, :poison ],
     mod: {Webclient, []}
   ]
   end
@@ -34,6 +34,7 @@ defmodule Webclient.Mixfile do
     {:floki, "~>0.14"},
     {:hound, "~>1.0.2"},
     {:cowboy,"~>1.0.0"},
-    {:plug, "~>1.0"}]
+    {:plug, "~>1.0"},
+	{:poison, "~>1.5"}]
   end
 end
