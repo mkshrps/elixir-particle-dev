@@ -53,7 +53,7 @@ defmodule Webclient.Router do
         #IO.inspect conn # Prints JSON POST body
    		#{:ok,body,conn} = read_body(conn,[])
 		#IO.inspect body
-		%Plug.conn{body_params: body} = conn
+		# %Plug.conn{body_params: body} = conn
 		send_resp(conn, 200, "Posted Measurement")
 	end
     
